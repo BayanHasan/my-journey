@@ -20,16 +20,15 @@ export default function MyBookings() {
       try {
         const res = await API.get("/bookings/my-bookings");
         setBookings(res.data);
-      } catch (err) {
-        setError("Failed to load bookings");
+          } catch {
+          setError("Failed to load bookings");
       } finally {
         setLoading(false);
       }
     };
 
     fetchBookings();
-  }, []);
-
+}, [navigate]);
 
   const getStatus = (status) => {
     const styles = {
