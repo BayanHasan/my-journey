@@ -6,8 +6,8 @@ import Flights from "./pages/Flights";
 import Cars from "./pages/cars";
 import Boats from "./pages/boats";
 import Flighthotel from "./pages/flighthotel";
-import  TravelInspiration from './pages/Travel Inspiration';
-import Travelapplication from './pages/travel application';
+import TravelInspiration from './pages/TravelInspiration'
+import TravelApplication from './pages/TravelApplication'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Booking from './pages/Booking'
