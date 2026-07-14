@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/HomesPage'
 import Trains from './pages/Trains'
-import Hotels from './pages/hotelsPage'
-import Flights from "./pages/Flights";
-import Cars from "./pages/cars";
-import Boats from "./pages/boats";
-import Flighthotel from "./pages/flighthotel";
+import Hotels from "./pages/HotelsPage"
+import Flights from "./pages/Flights"
+import Cars from "./pages/Cars"
+import Boats from "./pages/Boats"
+import Flighthotel from "./pages/FlightHotel"
 import TravelInspiration from './pages/TravelInspiration'
 import TravelApplication from './pages/TravelApplication'
 import Login from './pages/Login'
