@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://my-journey-backend-git-main-bayanhasan9.vercel.app/api',
+  baseURL: 'https://my-journey-backend-beta.vercel.app/api',
 });
 
 API.interceptors.request.use((req) => {
