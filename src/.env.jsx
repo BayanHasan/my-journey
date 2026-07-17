@@ -1,0 +1,2 @@
+NEXT_PUBLIC_SUPABASE_URL=https://iyaqixtonikeujmrmyzr.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_fZaQKQB6Hy9uVY4kDy2MfQ_iXdYF9ZP
