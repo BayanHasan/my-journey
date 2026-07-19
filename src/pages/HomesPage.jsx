@@ -41,7 +41,7 @@ const ATTRACTIONS = [
     <div className="border-t border-gray-300"></div>
 
     <a
-      href="http://localhost:5173/flights-hotels"
+      href="http://localhost:5173/cars"
       className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
     >
        Cars

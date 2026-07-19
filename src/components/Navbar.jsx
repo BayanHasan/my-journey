@@ -16,9 +16,7 @@ export default function Navbar() {
         <a href="/">
           <img src="/logo.png" alt="My Journey" className="h-16 w-auto" />
         </a>
-        <a href="/my-bookings" className="flex items-center gap-1 cursor-pointer hover:text-blue-300 font-semibold transition-colors">
-  📋 My Booking
-</a>
+       
         <div className="hidden md:flex items-center gap-5 text-sm font-medium text-white">
           <a href="/hotels" className="hover:text-blue-300">Hotels & Homes</a>
           <a href="/trains" className="hover:text-blue-300">Trains</a>
@@ -26,6 +24,9 @@ export default function Navbar() {
           <a href="/cars" className="hover:text-blue-300">Cars</a>
           <a href="/boats" className="hover:text-blue-300">Boats</a>
           <a href="/flight-hotel" className="hover:text-blue-300">Flight + Hotel</a>
+           <a href="/my-bookings" className="flex text-white items-center gap-1 cursor-pointer hover:text-blue-300 font-semibold transition-colors">
+  📅 My Booking
+</a>
         </div>
         <div className="flex items-center gap-4 text-sm text-white">
           <span className="hidden lg:block hover:text-blue-300">🎧 Support</span>
