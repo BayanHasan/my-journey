@@ -17,13 +17,14 @@ export default function Login() {
     setLoading(true);
     setError("");
     try {
-      const res = await API.post("/auth/login", form);
+const res = await API.post("/auth/login", form);
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       navigate("/");
     } catch (err) {
-      setError(err.response?.data?.message || "Login failed");
-    } finally {
+  console.log(err.response?.data);
+  setError(err.response?.data?.error || err.response?.data?.message || "Login failed");
+} finally {
       setLoading(false);
     }
   };
