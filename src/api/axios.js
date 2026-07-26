@@ -1,7 +1,6 @@
 import axios from "axios";
-
 const API = axios.create({
-  baseURL: "https://my-journey-backend-nu.vercel.app/api",
+  baseURL: "https://my-journey-backend-1upa.onrender.com/api",
 });
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
