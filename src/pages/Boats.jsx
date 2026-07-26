@@ -3,27 +3,27 @@ import Navbar from "../components/Navbar";
 
 const BOAT_TYPES = [
   { name: "Yacht rentals", img: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=400&q=80", type: "Intermediate care", price: " 700 $ / Day" },
-  { name: "Anguilla boat", img: "/Anguilla-Tourist-Board-Interview-Main.webp", type: "Intermediate care", price: " 700 $ / Day" },
-  { name: "Luxury Yacht", img: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=400&q=80", type: "Intermediate care", price: " 700 $ / Day" },
-  { name: "Luxury Boats", img: "/Aquanova-Charter-Hero-v2.jpg", type: "Intermediate care", price: " 700 $ / Day" },
+  { name: "Anguilla boat", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3Cx9cCiJv2JzkVwTbPE3Joj5JvJ2-eMBDTel31w_MQ&s=10", type: "Intermediate care", price: " 700 $ / Day" },
+  { name: "Luxury Yacht", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv-evlmU109PJBhcoDRlEkvyAe9-r5o-2iR1oZMMg7nw&s=10", type: "Intermediate care", price: " 700 $ / Day" },
+  { name: "Luxury Boats", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDaFk-bVJw3oGkzKVAMHfyvPIYajjW4hu6ZhMco-IDLw&s=10", type: "Intermediate care", price: " 700 $ / Day" },
 ];
 
 const CRUISES = [
-  { name: "Cruiser Boat Holidays in Italy", img: "/Grand-Canal-Venice-Italy.jpg", desc: "Choose from our range of 2-12 berth built hire cruisers and cruise to Venice and its lagoon. Moor in the center of the city and see the famous sights. You can also cruise to the famous islands of Murano and Burano in the Venice lagoon, perhaps even travel up one of the rivers." },
+  { name: "Cruiser Boat Holidays in Italy", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtUKeHA6EJVGJkw4YU7J3-HZWbLWJXLcHFSajQsCrM2A&s=10", desc: "Choose from our range of 2-12 berth built hire cruisers and cruise to Venice and its lagoon. Moor in the center of the city and see the famous sights. You can also cruise to the famous islands of Murano and Burano in the Venice lagoon, perhaps even travel up one of the rivers." },
   { name: "Cruiser Boat Holidays in Mallorca", img: "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=400&q=80", desc: "Choose from our range of 2-12 berth built hire cruisers and cruise to Venice and its lagoon. Moor in the center of the city and see the famous sights. You can also cruise to the famous islands of Murano and Burano in the Venice lagoon, perhaps even travel up one of the rivers." },
-  { name: "Cruiser Boat Holidays in Croatia", img: "/Homepage_Banner_first_frame_2025_cef736d0ff.avif", desc: "Choose from our range of 2-12 berth built hire cruisers and cruise to Venice and its lagoon. Moor in the center of the city and see the famous sights. You can also cruise to the famous islands of Murano and Burano in the Venice lagoon, perhaps even travel up one of the rivers. Sell Your Boat." },
+  { name: "Cruiser Boat Holidays in Croatia", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQWhOUa7IjacNS5wuR0Czs_lEPojZuHPcLT3sLwg9eOQ&s=10", desc: "Choose from our range of 2-12 berth built hire cruisers and cruise to Venice and its lagoon. Moor in the center of the city and see the famous sights. You can also cruise to the famous islands of Murano and Burano in the Venice lagoon, perhaps even travel up one of the rivers. Sell Your Boat." },
 ];
 
 const SERVICES = [
   { title: "Direct Order Now", label: "MY JOURNEY BOATS", img: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=400&q=80", tag: "" },
-  { title: "Financing / Loans", label: "APPLY FOR FINANCING", img: "/katarina.jpg", tag: "" },
+  { title: "Financing / Loans", label: "APPLY FOR FINANCING", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFxpVxUJWG2F1PMqh-5EgCisKucAZVe00y2SVkc8lYA&s=10", tag: "" },
   { title: "Sell Your Boat", label: "Booking Now", img: "https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=400&q=80", tag: "My Journey.com" },
 ];
 
 const CITIES = [
-  { name: "Türkiye", img: "/the-blue-mosque-is-located-in-istanbul-turkey_WGL7z1MsP.avif" },
-  { name: "Georgia", img: "/Best-Things-To-Do-In-Georgia-9.jpg" },
-  { name: "Azerbaijan", img: "/azerbaijan-in-one-week-1726051662-785X440.jpg" },
+  { name: "Türkiye", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtUKeHA6EJVGJkw4YU7J3-HZWbLWJXLcHFSajQsCrM2A&s=10" },
+  { name: "Georgia", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3Cx9cCiJv2JzkVwTbPE3Joj5JvJ2-eMBDTel31w_MQ&s=10" },
+  { name: "Azerbaijan", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAKtCCiq8ZJv7vHZ7hpqcCd0MldmO71E-c4s20iKEwvQ&s=10" },
 ];
 
 const FAQS = [

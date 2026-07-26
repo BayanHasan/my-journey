@@ -45,8 +45,7 @@ export default function Booking() {
     : 1;
 
   const totalPrice = (hotel?.price || 770) * nights * form.rooms;
-
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem("token");
     if (!token) { navigate("/login"); return; }
@@ -55,9 +54,14 @@ export default function Booking() {
     try {
       await API.post("/bookings", {
         hotel_id: hotel?.id || 1,
+        hotel_name: hotel?.name || "Sheraton Istanbul",
+        city: hotel?.city || "Istanbul",
+        image_url: hotel?.image_url || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",
         check_in: form.check_in,
         check_out: form.check_out,
         guests: form.guests,
+        rooms: form.rooms,
+        total_price: totalPrice,
       });
       setSuccess(true);
     } catch (err) {

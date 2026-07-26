@@ -16,14 +16,19 @@ export default function Register() {
     e.preventDefault();
     setLoading(true);
     setError("");
+
     try {
-const res = await API.post("/api/auth/register", form);
-localStorage.setItem("token", res.data.token);
+      const res = await API.post("/auth/register", form); 
+      console.log("Response Data:", res.data);
+
+      localStorage.setItem("token", res.data.token);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       navigate("/");
-    } catch (err) {
-      setError(err.response?.data?.message || "Register failed");
-    } finally {
+   } catch (error) {
+  console.error("Register Error:", error);
+  const serverError = error.response?.data?.error || error.response?.data?.message || "Register failed";
+  setError(serverError);
+} finally {
       setLoading(false);
     }
   };

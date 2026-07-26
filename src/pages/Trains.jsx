@@ -196,7 +196,7 @@ export default function Trains() {
 
       <div className="relative h-40 overflow-hidden">
         <img
-          src="/England Metro yellow Line.jpg"
+          src="https://media.istockphoto.com/id/1304784650/photo/train-arrives-at-the-platform-in-a-station-in-london-downtown.webp?a=1&b=1&s=612x612&w=0&k=20&c=bs31xs-17L6MR8Uxd4xVqgNSWQY2Xo88R6D5-lzQsvo="
           alt="Hotel"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -235,7 +235,7 @@ export default function Trains() {
 
       <div className="relative h-40 overflow-hidden">
         <img
-          src="/Osaka-Metro_Series400-409-01.jpg"
+          src="https://plus.unsplash.com/premium_photo-1694475298336-0f238ea27143?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8T3Nha2ElMjBNZXRyb3xlbnwwfHwwfHx8MA%3D%3D"
           alt="Hotel"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -273,7 +273,7 @@ Osaka Metro Blue Line
 
       <div className="relative h-40 overflow-hidden">
         <img
-          src="/Dubai-metro-blue-line-approved-1024x682.jpg"
+          src="https://media.istockphoto.com/id/2282760149/photo/railways-a-diesel-powered-railway-line-station-in-the-english-countryside.webp?a=1&b=1&s=612x612&w=0&k=20&c=3yZDWb7IlT0TQVHMFr2LV9fo_WGdhfNTP98Or1Css50="
           alt="Hotel"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -309,7 +309,8 @@ Osaka Metro Blue Line
 
 {/* Card 4 */}
   <div className="bg-blue-800 rounded-2xl shadow card-hover cursor-pointer overflow-hidden">
-  <img src="/trains newww.jpg" className="w-full h-36 object-cover" alt="Train" />
+  <img src="https://images.unsplash.com/photo-1515165562839-978bbcf18277?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHJhaW5zfGVufDB8fDB8fHww" 
+  className="w-full h-36 object-cover" alt="Train" />
   <div className="text-4xl mb-3"></div>
 
   <div className="font-bold text-white text-center">
@@ -332,7 +333,7 @@ Osaka Metro Blue Line
           Your reliable and authorised train journey planner for South Korea, UK, Europe, Spain, China, Hong Kong offering cheap train tickets and the best plan for your next train journey.
         </p>
         <div className="rounded-2xl overflow-hidden mb-6">
-          <img src="/firebird2176_high-quality_image_of_high-speed_train_in_britain_0086c2d1-5762-4b00-bcfe-4ec32d2f8d6a.webp" className="w-full h-64 object-cover" alt="Train" />
+          <img src="https://images.unsplash.com/photo-1505832018823-50331d70d237?q=80&w=1208&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="w-full h-64 object-cover" alt="Train" />
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {COUNTRY_TRAINS.map((t) => (
@@ -357,7 +358,7 @@ Osaka Metro Blue Line
             {[
               { city: "zurich", img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&q=80" },
               { city: "geneva", img: "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=200&q=80" },
-              { city: "lucerne", img: "/lurence.jpeg" },
+              { city: "lucerne", img: "https://images.unsplash.com/photo-1664369081469-8a72d67d75ae?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHVjZXJuZXxlbnwwfHwwfHx8MA%3D%3D" },
             ].map((s) => (
               <div key={s.city} className="relative rounded-xl overflow-hidden w-28 h-20">
                 <img src={s.img} className="w-full h-full object-cover" alt={s.city} />

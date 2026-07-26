@@ -6,9 +6,10 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("Hotel & Homes");
   const navigate = useNavigate();
 const ATTRACTIONS = [
-  { id: 1, name: "The Manila Cathedral", city: "Manila", country: "Philippines", price: 50, rating: "9.0", reviews: "775 reviews", image_url: "https://images.unsplash.com/photo-1555921015-5532091f6026?w=400&q=80" },
-  { id: 2, name: "Manila Ocean Park", city: "Manila", country: "Philippines", price: 75, rating: "9.0", reviews: "775 reviews", image_url: "/Manila Ocean Park.jpg" },
-  { id: 3, name: "Fort Santiago", city: "Manila", country: "Philippines", price: 30, rating: "9.0", reviews: "775 reviews", image_url: "/Fort Santiagoo.jpeg" },
+  { id: 1, name: "The Manila Cathedral", city: "Manila", country: "Philippines", price: 50, rating: "9.0", reviews: "775 reviews", image_url:
+     "https://images.unsplash.com/photo-1638751260202-2e0e7839a9e6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fFRoZSUyME1hbmlsYSUyMENhdGhlZHJhbHxlbnwwfHwwfHx8MA%3D%3D" },
+  { id: 2, name: "Manila Ocean Park", city: "Manila", country: "Philippines", price: 75, rating: "9.0", reviews: "775 reviews", image_url: "https://media.istockphoto.com/id/2220547800/photo/aerial-view-of-manila-city-skyline-with-parks-and-skyscrapers.webp?a=1&b=1&s=612x612&w=0&k=20&c=9uySb0J_H-EkAvljuufl4rdG9op4HhW-zHNfPV8s9Dk=" },
+  { id: 3, name: "Fort Santiago", city: "Manila", country: "Philippines", price: 30, rating: "9.0", reviews: "775 reviews", image_url: "https://media.istockphoto.com/id/863661928/photo/views-of-the-city-of-santiago-de-compostela-from-the-roofs-of-its-cathedral.jpg?s=612x612&w=0&k=20&c=tI1tLoYbsYsjD5HH3hw5O44IWN4NM6cBHfHUeUunpgQ=" },
 ];
 
  return (
@@ -16,69 +17,69 @@ const ATTRACTIONS = [
       <Navbar />
       <div className="flex max-w-screen-2xl mx-auto items-start">
 
-  {/* SIDEBAR */}
-<aside className="hidden lg:flex flex-col w-52 shrink-0 py-6 px-3 gap-6 sticky top-20 self-start rounded-r-2xl border-r h-screen overflow-y-auto">    <a
-      href="http://localhost:5173/hotels"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       Hotel & Homes
-    </a>
+ {/* SIDEBAR */}
+<aside className="hidden lg:flex flex-col w-52 shrink-0 py-6 px-3 gap-6 sticky top-20 self-start rounded-r-2xl border-r h-screen overflow-y-auto">    
+  <a
+    href="/hotels"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     Hotels & Homes
+  </a>
 
-    <a
-      href="http://localhost:5173/trains"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       Trains
-    </a>
+  <a
+    href="/trains"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     Trains
+  </a>
 
-    <a
-      href="http://localhost:5173/flights"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       Flights
-    </a>
+  <a
+    href="/flights"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     Flights
+  </a>
 
-    <div className="border-t border-gray-300"></div>
+  <div className="border-t border-gray-300"></div>
 
-    <a
-      href="http://localhost:5173/cars"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       Cars
-    </a>
+  <a
+    href="/cars"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     Cars
+  </a>
 
-    <a
-      href="http://localhost:5173/boats"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       Boats
-    </a>
+  <a
+    href="/boats"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     Boats
+  </a>
 
-    <a
-      href="http://localhost:5173/flight-hotel"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       Flight + Hotel
-    </a>
+  <a
+    href="/flight-hotel"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     Flight + Hotel
+  </a>
 
-    <div className="border-t border-gray-300"></div>
+  <div className="border-t border-gray-300"></div>
 
-    <a
-      href="http://localhost:5173/travel-inspiration"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       Travel Inspiration
-    </a>
+  <a
+    href="/travel-inspiration"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     Travel Inspiration
+  </a>
 
-    <a
-      href="http://localhost:5173/app"
-      className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
-    >
-       App
-    </a>
+  <a
+    href="/app"
+    className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
+  >
+     App
+  </a>
 
-  </aside>
-
+</aside>
 
         {/* MAIN CONTENT */}
         <main className="flex-1">
@@ -308,9 +309,9 @@ const ATTRACTIONS = [
                   <div className="bg-white rounded-2xl shadow-md overflow-hidden w-40">
 
                     <img
-                      src="/Stockholm Hotel Plaza.jpeg"
+                      src="https://media.istockphoto.com/id/2280277482/photo/stockholm-city-cityscape-gamla-stan-sweden-aerial-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=Bj06XVYkpIa0iyvC83dGYYXyJAqyBpeZIHDZmy1W4Rk="
                       className="w-full h-20 object-cover"
-                      alt="Sweden"
+                      alt="Canada"
                     />
 
                     <div className="p-2.5">
@@ -557,7 +558,7 @@ const ATTRACTIONS = [
 
       <div className="relative h-40 overflow-hidden">
         <img
-          src="/grand royal.jpeg"
+          src="https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fEhvdGVsfGVufDB8fDB8fHww"
           alt="Hotel"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -594,7 +595,7 @@ const ATTRACTIONS = [
         city: "Istanbul",
         country: "Turkey",
         price: 620,
-        image_url: "/grand royal.jpeg"
+        image_url: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fEhvdGVsfGVufDB8fDB8fHww"
       } 
     } 
   })}
@@ -721,7 +722,7 @@ const ATTRACTIONS = [
 
       <div className="h-32 overflow-hidden">
         <img
-          src="/download (1).jpeg"
+          src="https://images.unsplash.com/photo-1525943421222-633f69ca9078?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fEVkaW5idXJnaHxlbnwwfHwwfHx8MA%3D%3D"
           alt="Train"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -744,7 +745,7 @@ const ATTRACTIONS = [
 
       <div className="h-32 overflow-hidden">
         <img
-          src="/download (2).jpeg"
+          src="https://media.istockphoto.com/id/1492724975/photo/manchester-tram.webp?a=1&b=1&s=612x612&w=0&k=20&c=K7qmxuY65le_lSWcqVksUdvqYeKD5tUUr8Nqv-upUtw="
           alt="Train"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -766,7 +767,7 @@ const ATTRACTIONS = [
 
       <div className="h-32 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&q=80"
+          src="https://images.unsplash.com/photo-1706198809101-76340e4da15f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TG9uZG9uJTIwJUUyJTgwJTkzJTIwRWRpbmJ1cmdofGVufDB8fDB8fHww"
           alt="Train"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -846,7 +847,7 @@ const ATTRACTIONS = [
 
       <div className="h-40 overflow-hidden">
         <img
-          src="range.jpg"
+          src="https://images.unsplash.com/photo-1658547737133-18ff87807de7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UmFuZ2UlMjBSb3ZlciUyMEV2b3F1ZXxlbnwwfHwwfHx8MA%3D%3D"
           alt="Car"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -881,7 +882,7 @@ const ATTRACTIONS = [
 
       <div className="h-40 overflow-hidden">
         <img
-          src="best-electric-vehicle-of-2022-tesla-model-y-v0--VcpnkNvWGexNwWUNGf8tW2IWOxYHsZ68KqEEw9xVSc.webp"
+          src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFRlc2xhJTIwTmV3JTIwJTI2JTIwVXNlZCUyMEVsZWN0cmljJTIwQ2Fyc3xlbnwwfHwwfHx8MA%3D%3D"
           alt="Tesla"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
@@ -916,7 +917,7 @@ const ATTRACTIONS = [
 
       <div className="h-40 overflow-hidden">
         <img
-          src="toyota.avif"
+          src="https://images.unsplash.com/photo-1650530579355-7ad9d4766043?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VG95b3RhJTIwTGFuZCUyMENydWlzZXJ8ZW58MHx8MHx8fDA%3D"
           alt="Toyota"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />

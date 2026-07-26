@@ -9,7 +9,7 @@ export default function MyBookings() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
- useEffect(() => {
+  useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
       navigate("/login");
@@ -18,17 +18,18 @@ export default function MyBookings() {
 
     const fetchBookings = async () => {
       try {
-        const res = await API.get("/bookings/my-bookings");
+        const res = await API.get("/bookings");
         setBookings(res.data);
-          } catch {
-          setError("Failed to load bookings");
+      } catch (err) {
+        console.error("Error fetching bookings:", err);
+        setError("Failed to load bookings");
       } finally {
         setLoading(false);
       }
     };
 
     fetchBookings();
-}, [navigate]);
+  }, [navigate]);
 
   const getStatus = (status) => {
     const styles = {
@@ -36,7 +37,7 @@ export default function MyBookings() {
       confirmed: "bg-green-100 text-green-700",
       cancelled: "bg-red-100 text-red-700",
     };
-    return styles[status] || styles.pending;
+    return styles[status?.toLowerCase()] || styles.pending;
   };
 
   return (
@@ -62,10 +63,10 @@ export default function MyBookings() {
         )}
 
         {error && (
-          <div className="bg-red-50 text-red-600 px-6 py-4 rounded-2xl text-sm">{error}</div>
+          <div className="bg-red-50 text-red-600 px-6 py-4 rounded-2xl text-sm mb-4">{error}</div>
         )}
 
-        {!loading && bookings.length === 0 && (
+        {!loading && bookings.length === 0 && !error && (
           <div className="text-center py-20">
             <div className="text-6xl mb-4">🧳</div>
             <h3 className="text-xl font-black text-gray-700 mb-2">No bookings yet</h3>
@@ -92,14 +93,14 @@ export default function MyBookings() {
                 </div>
 
                 {/* Details */}
-                <div className="flex-1">
+                <div className="flex-1 w-full">
                   <div className="flex items-start justify-between flex-wrap gap-2">
                     <div>
                       <h3 className="font-black text-blue-900 text-lg">{booking.hotel_name}</h3>
-                      <p className="text-gray-400 text-xs mt-0.5">📍 {booking.city}</p>
+                      <p className="text-gray-400 text-xs mt-0.5">📍 {booking.city || "Hotel Location"}</p>
                     </div>
                     <span className={`text-xs font-bold px-3 py-1 rounded-full ${getStatus(booking.status)}`}>
-                      {booking.status?.charAt(0).toUpperCase() + booking.status?.slice(1)}
+                      {booking.status ? booking.status.charAt(0).toUpperCase() + booking.status.slice(1) : "Pending"}
                     </span>
                   </div>
 
@@ -107,22 +108,22 @@ export default function MyBookings() {
                     <div className="bg-gray-50 rounded-xl p-3">
                       <div className="text-xs text-gray-400">Check-in</div>
                       <div className="text-sm font-bold text-gray-700 mt-0.5">
-                        {new Date(booking.check_in).toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric" })}
+                        {booking.check_in ? new Date(booking.check_in).toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric" }) : "N/A"}
                       </div>
                     </div>
                     <div className="bg-gray-50 rounded-xl p-3">
                       <div className="text-xs text-gray-400">Check-out</div>
                       <div className="text-sm font-bold text-gray-700 mt-0.5">
-                        {new Date(booking.check_out).toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric" })}
+                        {booking.check_out ? new Date(booking.check_out).toLocaleDateString("en-US", { day: "numeric", month: "short", year: "numeric" }) : "N/A"}
                       </div>
                     </div>
                     <div className="bg-gray-50 rounded-xl p-3">
                       <div className="text-xs text-gray-400">Guests</div>
-                      <div className="text-sm font-bold text-gray-700 mt-0.5">👥 {booking.guests} guests</div>
+                      <div className="text-sm font-bold text-gray-700 mt-0.5">👥 {booking.guests || 1} guests</div>
                     </div>
                     <div className="bg-blue-50 rounded-xl p-3">
                       <div className="text-xs text-blue-400">Total Price</div>
-                      <div className="text-sm font-black text-blue-700 mt-0.5">${booking.total_price}</div>
+                      <div className="text-sm font-black text-blue-700 mt-0.5">${booking.price || booking.total_price || 0}</div>
                     </div>
                   </div>
                 </div>

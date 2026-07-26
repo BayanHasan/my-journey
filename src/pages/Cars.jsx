@@ -2,23 +2,23 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 const POPULAR_CARS = [
-  { name: "Hyundai Tucson", img: "/hyundai-tucson-ultimate-17.jpg",  price: " 400 $ / Day" },
-  { name: "Kia Seltos", img: "/Kia Seltos.jpeg", price: " 100 $ / Day" },
-  { name: "Genesis G80", img: "/gensies.jpeg", price: " 300 $ / Day" },
-  { name: "Range Rover", img: "/Range rover.jpeg", price: " 550 $ / Day" },
+  { name: "Hyundai Tucson", img: "https://images.unsplash.com/photo-1575090536203-2a6193126514?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SHl1bmRhaSUyMFR1Y3NvbnxlbnwwfHwwfHx8MA%3D%3D",  price: " 400 $ / Day" },
+  { name: "Kia Seltos", img: "https://images.unsplash.com/photo-1659406189166-7c17fe5df12a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lhJTIwc2VsdG9zfGVufDB8fDB8fHww", price: " 100 $ / Day" },
+  { name: "Genesis G80", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTC3BIWjnXlbRBytoeaWBQLEYRRvy-nnlwyDVMi80NoA&s=10", price: " 300 $ / Day" },
+  { name: "Range Rover", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp94Cup2VLy5D-lLEQWQ__Wd5UTKfhEp4dWutumVRT-A&s=10", price: " 550 $ / Day" },
 ];
 
 const RECOMMENDED_CARS = [
-  { name: "Kia K5", img: "/Kia K5.jpeg", price: " 230 $ / Day" },
-  { name: "Hyundai TUCSON", img: "/Hyundai TUCSON.jpg", price: " 700 $ / Day" },
+  { name: "Kia K5", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7cfpMJTFGjV3ZsgiiR-sXC_xLWw61z9bYYeUCeo4Haw&s=10", price: " 230 $ / Day" },
+  { name: "Hyundai TUCSON", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7IHFahPUnYrMHXIgGekLMuMjzcD7fr9Ot7ZHRea2iMA&s=10", price: " 700 $ / Day" },
   { name: "Mercedes", img: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=400&q=80", price: " 300 $ / Day" },
-  { name: "Nissan", img: "/Nissan.jpeg", price: " 200 $ / Day" },
+  { name: "Nissan", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQcm3uxxOeA5G4xSKlSfjeS97_yjL61ZEJ4Jm-IEzrA&s=10", price: " 200 $ / Day" },
 ];
 
 const CITIES = [
-  { name: "Türkiye", img: "/the-blue-mosque-is-located-in-istanbul-turkey_WGL7z1MsP.avif" },
-  { name: "Georgia", img: "/Best-Things-To-Do-In-Georgia-9.jpg" },
-  { name: "Azerbaijan", img: "/azerbaijan-in-one-week-1726051662-785X440.jpg" },
+  { name: "Türkiye", img: "https://vid.alarabiya.net/images/2021/10/18/ee326e8c-10b6-4a05-8a17-1bbe884e169c/ee326e8c-10b6-4a05-8a17-1bbe884e169c_16x9_1200x676.JPG?width=555" },
+  { name: "Georgia", img: "https://www.roadiscalling.com/wp-content/uploads/2019/06/Best-Things-To-Do-In-Georgia-9.jpg" },
+  { name: "Azerbaijan", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAKtCCiq8ZJv7vHZ7hpqcCd0MldmO71E-c4s20iKEwvQ&s=10" },
 ];
 
 

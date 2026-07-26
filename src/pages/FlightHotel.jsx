@@ -2,18 +2,18 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 const DESTINATIONS = [
-  { from: "Amman", to: "Cairo", img: "/Cairo 1.webp", rating: "9/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
-  { from: "Amman", to: "Jeddah", img: "/jeddah.jpg", rating: "10/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
-  { from: "Amman", to: "Istanbul", img: "/istanbul.jpeg", rating: "9/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
-  { from: "Amman", to: "Dubai", img: "/dubai.webp", rating: "9/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
+  { from: "Amman", to: "Cairo", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSisAFsUfbQzSpQ_MDt2RBYrattGeBcjYT8uXXvnVhSnQ&s=10", rating: "9/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
+  { from: "Amman", to: "Jeddah", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3JCEld7BU6rhF_pauCOSN2XwCM9CSXM3BYp-e9JzC9g&s", rating: "10/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
+  { from: "Amman", to: "Istanbul", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI_HGR1Ig5FSuaT35W4iad0wUzFdeH57J_RwOwKUzxgQ&s=10", rating: "9/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
+  { from: "Amman", to: "Dubai", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjCYr_IqfVwGCWI5XJB3wUN6-BQzMkH4t1Hcy1VkFPjQ&s=10", rating: "9/10", reviews: "775 reviews", price: "780 $", discount: "10% off" },
 ];
 
 const DEST_TABS = ["Egypt", "KSA", "Turkey", "UAE"];
 
 const AIRLINES = [
-  { name: "TURKISH AIRLINES", img: "/turkish_airlines.webp", rating: "10/10", reviews: "775 reviews", price: " 700 $" },
-  { name: "EMIRATES AIRLINES", img: "/EmiratesFlightSale-2020-GettyImages-545392896.webp", rating: "10/10", reviews: "775 reviews", price: " 560 $" },
-  { name: "QATAR AIRWAYS", img: "/QATAR AIRWAYS.webp", rating: "10/10", reviews: "775 reviews", price: " 841 $" },
+  { name: "TURKISH AIRLINES", img: "https://images.unsplash.com/photo-1562368311-d8b8424be477?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VFVSS0lTSCUyMEFJUkxJTkVTfGVufDB8fDB8fHww", rating: "10/10", reviews: "775 reviews", price: " 700 $" },
+  { name: "EMIRATES AIRLINES", img: "https://images.unsplash.com/photo-1720463698294-7acd5f27112c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RU1JUkFURVMlMjBBSVJMSU5FU3xlbnwwfHwwfHx8MA%3D%3D", rating: "10/10", reviews: "775 reviews", price: " 560 $" },
+  { name: "QATAR AIRWAYS", img: "https://images.unsplash.com/photo-1587025448010-3e6902606be3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UUFUQVIlMjBBSVJXQVlTfGVufDB8fDB8fHww", rating: "10/10", reviews: "775 reviews", price: " 841 $" },
 ];
 
 const COUNTRIES = [

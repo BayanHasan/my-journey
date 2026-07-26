@@ -2,29 +2,29 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 const AIRLINES = [
-  { name: "TURKISH AIRLINES", img: "/turkish_airlines.webp", rating: "10/10", reviews: "775 reviews", price: " 540 $",
-    economy: "/turkish-b777-cabin.jpg",
-    premium: "/Premium-Economy-turkish.webp", 
-    business: "/business turkish.webp",
-    first: "/first class turkish.webp",
+  { name: "TURKISH AIRLINES", img: "https://images.unsplash.com/photo-1562368311-d8b8424be477?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VFVSS0lTSCUyMEFJUkxJTkVTfGVufDB8fDB8fHww", rating: "10/10", reviews: "775 reviews", price: " 540 $",
+    economy: "https://aircraftinteriorsinternational.com/wp-content/uploads/2019/06/Dreamliner-2.png",
+    premium: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqYU_nwcQr3QE45NuldjTpQEtylsHikEdLS6FrQRZ4A&s=10", 
+    business: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYyqEjOwfnyHAfze3MIey3jdIwuk2HLljtqSIVCwBVg&s=10",
+    first: "https://cdn.mos.cms.futurecdn.net/FrYwauvxm33xnUJW9PjXMm-1540-80.jpg",
   },
-  { name: "EMIRATES AIRLINES", img: "/EmiratesFlightSale-2020-GettyImages-545392896.webp", rating: "10/10", reviews: "775 reviews", price: " 560 $",
-    economy: "/Emirates-777-300ER-Economy-1.webp",
-    premium: "/premium-economy-EMIRATES AIRLINES.avif",
-    business: "/emirates-business.jpg",
-    first: "/emirates first.jpg",
+  { name: "EMIRATES AIRLINES", img: "https://images.unsplash.com/photo-1720463698294-7acd5f27112c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8RU1JUkFURVMlMjBBSVJMSU5FU3xlbnwwfHwwfHx8MA%3D%3D", rating: "10/10", reviews: "775 reviews", price: " 560 $",
+    economy: "https://www.nerdwallet.com/tachyon/2021/04/economyclassbackview-2.jpg?resize=2400%2C1440",
+    premium: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGkGkIOqnl5sGk4PEnjNLJRkvthP_uDxvxDNFt11o4nw&s=10",
+    business: "https://mainlymiles.com/wp-content/uploads/2025/08/Cover-2000x1200.jpg?crop=1",
+    first: "https://www.futuretravelexperience.com/wp-content/uploads/2023/01/Emirates-refurbished-A380.jpg",
   },
-  { name: "QATAR AIRWAYS", img: "/QATAR AIRWAYS.webp", rating: "10/10", reviews: "775 reviews", price: " 841 $",
-    economy: "/Qatar-Airways-Boeing-777-Economy-Class.jpg",
-    premium: "/premium QATAR AIRWAYS.jpg",
-    business: "/qatar-Airways-Boeing-787-Dreamliner-interior-business-class-cabin.jpg",
-    first: "/13-Qatar-Airways-A380-First-Class-Seat-e1538145936785.webp",
+  { name: "QATAR AIRWAYS", img: "https://images.unsplash.com/photo-1587025448010-3e6902606be3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UUFUQVIlMjBBSVJXQVlTfGVufDB8fDB8fHww", rating: "10/10", reviews: "775 reviews", price: " 841 $",
+    economy: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4_jhdXnOdGnN6fLcs4vR2E0DV3_PxYSQWjWoI5S6cBQ&s=10",
+    premium: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfNZkNntEW4LtJD5NdVg3IW3Teb4fDWCaIdkSmbCl6ow&s=10",
+    business: "https://static.euronews.com/articles/stories/08/61/97/08/1200x675_cmsv2_5bd7eb79-ea69-520c-b171-a50164576ece-8619708.jpg",
+    first: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNqFDCIrrJlWoKNEj7BW9fuCyxOlH5QcuRueqYh5gIqw&s=10",
   },
-  { name: "CAIRO AIRWAYS", img: "/air cairo.jpg", rating: "10/10", reviews: "775 reviews", price: " 341 $",
-    economy: "/cairo economy.jpg",
-    premium: "/CAIRO AIRWAYS premium.png",
-    business: "/cairo business.png",
-    first: "/cairo first.jpeg",
+  { name: "CAIRO AIRWAYS", img: "https://images.unsplash.com/photo-1664728723144-90a97fb1464f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YWlyJTIwY2Fpcm98ZW58MHx8MHx8fDA%3D", rating: "10/10", reviews: "775 reviews", price: " 341 $",
+    economy: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThEf2puOpPb7qQ3jJl72_CuTp26uJ6jg1q10lK67vxRg&s=10",
+    premium: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb8rUb1xQXUS32d1MWDNlJNJmLOnY6LJuMVCLKX2DkKp3HO4aymMYkwhM&s=10",
+    business: "https://bestbargain.com/wp-content/uploads/2023/10/image-118.png",
+    first: "https://static0.simpleflyingimages.com/wordpress/wp-content/uploads/2026/06/first-class-hidden.jpg?w=1600&h=900&fit=crop",
   },
 ];
 const CLASSES = [
@@ -68,7 +68,7 @@ export default function Flights() {
       {/* HERO */}
       <section className="relative min-h-64 flex items-center justify-center px-8 py-10 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/turkish-airlines-airplane-landing-499098536-5c9219cec9e77c00014a9e57.jpg')" }} />
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1562368311-d8b8424be477?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VFVSS0lTSCUyMEFJUkxJTkVTfGVufDB8fDB8fHww')" }} />
         <div className="absolute inset-0 bg-blue-950/70" />
         <div className="relative z-10 flex flex-col items-center w-full">
 
@@ -203,7 +203,7 @@ export default function Flights() {
 
         <div className="rounded-2xl overflow-hidden h-64 relative">
           <img
-            src="/Cebu-City-aerial-view.jpg"
+            src="https://assets.discover-the-world.com/tr:w-1440,h-900/production/app/uploads/2024/10/canada-hiker-at-epic-viewpoint-alberta-dc.jpg"
             alt="Map"
             className="w-full h-full object-cover"
           />

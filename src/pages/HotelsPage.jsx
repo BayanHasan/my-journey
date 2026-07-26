@@ -15,7 +15,7 @@ export default function hotelsPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/Family-Pool.webp')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8SG90ZWxzfGVufDB8fDB8fHww')",
           }}
         ></div>
 
@@ -299,7 +299,7 @@ export default function hotelsPage() {
       <div className="h-40 overflow-hidden">
 
         <img
-          src="/Palm-House-Palm-Beach-2025-new-hotel-LEAD-1.jpg"
+          src="https://crimson-park.com/wp-content/uploads/2023/11/20-discount-on-all-services-1200x675.jpg"
           className="w-full h-full object-cover"
           alt="New Hotels"
         />
@@ -378,7 +378,7 @@ export default function hotelsPage() {
 
               <div className="relative">
                 <img
-                  src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1716207271325-73410b33a3c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTB8fGlzdGFuYnVsJTIwaG90ZWx8ZW58MHx8MHx8fDA%3D"
                   alt=""
                   className="w-full h-52 object-cover"
                 />
@@ -420,7 +420,7 @@ export default function hotelsPage() {
 
               <div className="relative">
                 <img
-                  src="/Conrad Istanbul Bosphorus.jpeg"
+                  src="https://media.istockphoto.com/id/973790720/photo/istanbul.jpg?s=612x612&w=0&k=20&c=aHfB6ouYDOKPhDCRywbf2uATl0U-wyL7Tl-3E_vIXfk="
                   alt=""
                   className="w-full h-52 object-cover"
                 />
@@ -462,7 +462,7 @@ export default function hotelsPage() {
 
               <div className="relative">
                 <img
-                  src="/download.jpeg"
+                  src="https://media.istockphoto.com/id/642777582/photo/istanbul.jpg?s=612x612&w=0&k=20&c=ieAr7pPUX39fD5dpTAZtfjvo8C_9rPLhhtYe5x62bnA="
                   alt=""
                   className="w-full h-52 object-cover"
                 />
@@ -505,7 +505,7 @@ export default function hotelsPage() {
 
               <div className="relative">
                 <img
-                  src="/images.jpeg"
+                  src="https://images.unsplash.com/photo-1682942360784-cfe7f5dbe5bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzh8fGlzdGFuYnVsJTIwaG90ZWx8ZW58MHx8MHx8fDA%3D"
                   alt=""
                   className="w-full h-52 object-cover"
                 />
@@ -567,7 +567,7 @@ export default function hotelsPage() {
 
   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
     <div className="bg-white rounded-2xl shadow hover:shadow-xl transition-all cursor-pointer overflow-hidden">
-      <img src="/Antalya.jpeg" className="w-full h-36 object-cover" alt="Antalya" />
+      <img src="https://plus.unsplash.com/premium_photo-1697730104948-43575659bf0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YW50YWx5YXxlbnwwfHwwfHx8MA%3D%3D" className="w-full h-36 object-cover" alt="Antalya" />
       <div className="p-3">
         <div className="text-blue-700 font-bold">Antalya</div>
         <div className="text-xs text-gray-400">Antalya Region, Türkiye</div>
@@ -582,7 +582,7 @@ export default function hotelsPage() {
     </div>
 
     <div className="bg-white rounded-2xl shadow hover:shadow-xl transition-all cursor-pointer overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=400&q=80" className="w-full h-36 object-cover" alt="Fethiye" />
+      <img src="https://images.unsplash.com/photo-1698304685474-51e00e5bb4c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RmV0aGl5ZXxlbnwwfHwwfHx8MA%3D%3D" className="w-full h-36 object-cover" alt="Fethiye" />
       <div className="p-3">
         <div className="text-blue-700 font-bold">Fethiye</div>
         <div className="text-xs text-gray-400">Muğla, Türkiye</div>
@@ -597,7 +597,7 @@ export default function hotelsPage() {
     </div>
 
     <div className="bg-white rounded-2xl shadow hover:shadow-xl transition-all cursor-pointer overflow-hidden">
-      <img src="/Bodrum.jpeg" className="w-full h-36 object-cover" alt="Bodrum" />
+      <img src="https://media.istockphoto.com/id/1163622485/photo/bodrum-turkey-summer-holidays-great-beaches-of-old-town.webp?a=1&b=1&s=612x612&w=0&k=20&c=pB1ESBaX98SX5QixPDvhrHqBG7KMgtqK9NpQuWpuz1E=" className="w-full h-36 object-cover" alt="Bodrum" />
       <div className="p-3">
         <div className="text-blue-700 font-bold">Bodrum</div>
         <div className="text-xs text-gray-400">Antalya Region, Türkiye</div>
@@ -612,7 +612,7 @@ export default function hotelsPage() {
     </div>
 
     <div className="bg-white rounded-2xl shadow hover:shadow-xl transition-all cursor-pointer overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&q=80" className="w-full h-36 object-cover" alt="Istanbul" />
+      <img src="https://plus.unsplash.com/premium_photo-1661962550248-59cf249e078b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8SXN0YW5idWx8ZW58MHx8MHx8fDA%3D" className="w-full h-36 object-cover" alt="Istanbul" />
       <div className="p-3">
         <div className="text-blue-700 font-bold">Istanbul</div>
         <div className="text-xs text-gray-400">Antalya Region, Türkiye</div>
@@ -667,7 +667,7 @@ export default function hotelsPage() {
         name: "Stockholm",
         location: "Stockholm, Sweden",
         price: "From 680 $",
-        image: "/Stockholm Hotel Plaza.jpeg",
+        image: "https://images.unsplash.com/photo-1588653818221-2651ec1a6423?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U3RvY2tob2xtfGVufDB8fDB8fHww",
       },
     ].map((city, index) => (
       <div
@@ -728,7 +728,7 @@ export default function hotelsPage() {
         rating: "8.5/10",
         reviews: "3425 reviews",
         stars: "★★★★★",
-        image: "/download (8).jpeg",
+        image: "https://media.istockphoto.com/id/2213411469/photo/photorealistic-3d-render-of-a-premium-hotel-bedroom.jpg?s=612x612&w=0&k=20&c=0orkasa78xjFbY-qiltD58oT6yqhCCeM632clCdpSDo=",
       },
       {
         name: "Crowne Plaza Shanghai",
