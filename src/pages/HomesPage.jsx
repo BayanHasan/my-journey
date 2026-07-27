@@ -436,7 +436,7 @@ const ATTRACTIONS = [
         city: "Istanbul",
         country: "Turkey",
         price: 770,
-        image_url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80"
+        image_url: "https://cache.marriott.com/content/dam/marriott-renditions/ISTAS/istas-exterior-4574-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*"
       } 
     } 
   })}
@@ -489,7 +489,7 @@ const ATTRACTIONS = [
         city: "Istanbul",
         country: "Turkey",
         price: 455,
-        image_url: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=400&q=80"
+        image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkRc1wTjkz8IEug_11C8dFEFixhLzZKvYVl_-kbunbJQ&s=10"
       } 
     } 
   })}
@@ -542,7 +542,7 @@ const ATTRACTIONS = [
         city: "Istanbul",
         country: "Turkey",
         price: 760,
-        image_url: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&q=80"
+        image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa2PVXNp-UFUsFUo_nuQJ8FG6G99NhqzinGDhUdCqJhA&s=10"
       } 
     } 
   })}
@@ -595,7 +595,7 @@ const ATTRACTIONS = [
         city: "Istanbul",
         country: "Turkey",
         price: 620,
-        image_url: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fEhvdGVsfGVufDB8fDB8fHww"
+        image_url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/08/52/7e/grand-royale-hotel-spa.jpg?w=900&h=500&s=1"
       } 
     } 
   })}

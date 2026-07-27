@@ -115,7 +115,7 @@ const handleSubmit = async (e) => {
 
             {/* ROOM CARD */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex gap-4 items-start">
-             <img src="/public/shera.jpeg" className="w-40 h-28 object-cover rounded-xl shrink-0" alt={hotel?.name} />
+              <img src={hotel?.image_url || hotel?.image || "/public/shera.jpeg"} className="w-40 h-28 object-cover rounded-xl shrink-0" alt={hotel?.name} />
            <div>
                 <h4 className="text-lg font-bold text-blue-900 flex items-center gap-2">
                   {hotel?.name || "Sheraton Istanbul"}
@@ -130,8 +130,7 @@ const handleSubmit = async (e) => {
             {/* IMAGES */}
             <div className="grid grid-cols-4 grid-rows-2 gap-2 rounded-2xl overflow-hidden h-72">
               <div className="col-span-2 row-span-2">
-                <img src="/sheraton hotel.jpg" className="w-full h-full object-cover" alt="Hotel" />
-              </div>
+<img src={hotel?.image_url || hotel?.image || "/sheraton hotel.jpg"} className="w-full h-full object-cover" alt="Hotel" />              </div>
               {HOTEL_IMAGES.slice(1, 5).map((img, i) => (
                 <div key={i} className="relative overflow-hidden">
                   <img src={img} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="" />

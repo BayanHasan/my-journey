@@ -81,12 +81,12 @@ export default function MyBookings() {
         {!loading && bookings.length > 0 && (
           <div className="space-y-4">
             {bookings.map((booking) => (
-              <div key={booking.id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 flex flex-col md:flex-row gap-4 items-start">
+              <div key={booking.id || booking._id} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 flex flex-col md:flex-row gap-4 items-start">
                 
                 {/* Image */}
                 <div className="w-full md:w-40 h-32 rounded-xl overflow-hidden shrink-0">
                   <img
-                    src={booking.image_url || "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80"}
+                    src={booking.image_url || booking.image || booking.hotel_image || "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80"}
                     className="w-full h-full object-cover"
                     alt={booking.hotel_name}
                   />
@@ -123,7 +123,9 @@ export default function MyBookings() {
                     </div>
                     <div className="bg-blue-50 rounded-xl p-3">
                       <div className="text-xs text-blue-400">Total Price</div>
-                      <div className="text-sm font-black text-blue-700 mt-0.5">${booking.price || booking.total_price || 0}</div>
+                      <div className="text-sm font-black text-blue-700 mt-0.5">
+                        ${booking.total_price || booking.price || booking.totalPrice || booking.amount || 0}
+                      </div>
                     </div>
                   </div>
                 </div>
