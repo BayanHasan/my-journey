@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import API from "../api/axios";
 
 const HOTEL_IMAGES = [
-  "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",
+  "https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SG90ZWx8ZW58MHx8MHx8fDA%3D",
   "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",
   "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=600&q=80",
   "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80",
