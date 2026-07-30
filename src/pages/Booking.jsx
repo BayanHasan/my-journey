@@ -4,12 +4,11 @@ import Navbar from "../components/Navbar";
 import API from "../api/axios";
 
 const HOTEL_IMAGES = [
-  "/public/caption.jpg",
-  "/public/ykk.jpeg",
-  "/public/jdkdll.jpeg",
-  "/public/dhddi.jpg",
-  "/public/caption.jpg",
-  "/public/shrt.jpeg",
+  "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",
+  "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",
+  "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=600&q=80",
+  "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80",
+  "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80",
 ];
 
 const SURROUNDINGS = [
@@ -45,7 +44,12 @@ export default function Booking() {
     : 1;
 
   const totalPrice = (hotel?.price || 770) * nights * form.rooms;
-const handleSubmit = async (e) => {
+
+  const displayImage = (hotel?.image_url && hotel.image_url.startsWith('http'))
+    ? hotel.image_url
+    : ((hotel?.image && hotel.image.startsWith('http')) ? hotel.image : HOTEL_IMAGES[0]);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const token = localStorage.getItem("token");
     if (!token) { navigate("/login"); return; }
@@ -56,7 +60,7 @@ const handleSubmit = async (e) => {
         hotel_id: hotel?.id || 1,
         hotel_name: hotel?.name || "Sheraton Istanbul",
         city: hotel?.city || "Istanbul",
-        image_url: hotel?.image_url || "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",
+        image_url: displayImage,
         check_in: form.check_in,
         check_out: form.check_out,
         guests: form.guests,
@@ -84,8 +88,8 @@ const handleSubmit = async (e) => {
             <p className="text-gray-500 text-sm mb-2">Thank you for booking with My Journey</p>
             <p className="text-gray-400 text-xs mb-8">A confirmation email has been sent to your email address.</p>
             <div className="bg-blue-50 rounded-2xl p-4 mb-6 text-left">
-              <div className="text-sm font-bold text-blue-900 mb-2">{hotel?.name}</div>
-              <div className="text-xs text-gray-500">{hotel?.city}, {hotel?.country}</div>
+              <div className="text-sm font-bold text-blue-900 mb-2">{hotel?.name || "Sheraton Istanbul"}</div>
+              <div className="text-xs text-gray-500">{hotel?.city || "Istanbul"}, Türkiye</div>
               <div className="text-xs text-gray-500 mt-1">Check-in: {form.check_in} → Check-out: {form.check_out}</div>
               <div className="text-blue-700 font-bold mt-2">Total: ${totalPrice}</div>
             </div>
@@ -105,18 +109,20 @@ const handleSubmit = async (e) => {
 
       <div className="max-w-screen-lg mx-auto px-6 py-8">
 
-        {/* TITLE */}
         <h1 className="text-3xl font-bold text-blue-900 mb-6">Complete Your Booking</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-          {/* LEFT SIDE */}
           <div className="lg:col-span-2 space-y-6">
 
-            {/* ROOM CARD */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex gap-4 items-start">
-              <img src={hotel?.image_url || hotel?.image || "/public/shera.jpeg"} className="w-40 h-28 object-cover rounded-xl shrink-0" alt={hotel?.name} />
-           <div>
+              <img
+                src={displayImage}
+                className="w-40 h-28 object-cover rounded-xl shrink-0 bg-gray-100"
+                alt={hotel?.name || "Hotel"}
+                onError={(e) => { e.target.src = HOTEL_IMAGES[0]; }}
+              />
+              <div>
                 <h4 className="text-lg font-bold text-blue-900 flex items-center gap-2">
                   {hotel?.name || "Sheraton Istanbul"}
                   <span className="text-yellow-400 text-sm">★★★★</span>
@@ -127,13 +133,23 @@ const handleSubmit = async (e) => {
               </div>
             </div>
 
-            {/* IMAGES */}
-            <div className="grid grid-cols-4 grid-rows-2 gap-2 rounded-2xl overflow-hidden h-72">
+            <div className="grid grid-cols-4 grid-rows-2 gap-2 rounded-2xl overflow-hidden h-72 bg-gray-100">
               <div className="col-span-2 row-span-2">
-<img src={hotel?.image_url || hotel?.image || "/sheraton hotel.jpg"} className="w-full h-full object-cover" alt="Hotel" />              </div>
+                <img
+                  src={displayImage}
+                  className="w-full h-full object-cover"
+                  alt="Hotel main"
+                  onError={(e) => { e.target.src = HOTEL_IMAGES[0]; }}
+                />
+              </div>
               {HOTEL_IMAGES.slice(1, 5).map((img, i) => (
-                <div key={i} className="relative overflow-hidden">
-                  <img src={img} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="" />
+                <div key={i} className="relative overflow-hidden bg-gray-200">
+                  <img
+                    src={img}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    alt="Hotel thumbnail"
+                    onError={(e) => { e.target.src = HOTEL_IMAGES[0]; }}
+                  />
                   {i === 3 && (
                     <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                       <span className="text-white text-xs font-bold bg-black/40 px-2 py-1 rounded-lg">+ see more</span>
@@ -143,7 +159,6 @@ const handleSubmit = async (e) => {
               ))}
             </div>
 
-            {/* QUOTE */}
             <div className="flex gap-4 items-center bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
               <div className="w-1 h-14 bg-blue-700 rounded-full shrink-0"></div>
               <p className="text-gray-600 text-sm italic">
@@ -151,7 +166,6 @@ const handleSubmit = async (e) => {
               </p>
             </div>
 
-            {/* SURROUNDINGS */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h3 className="text-xl font-black text-blue-900 mb-4">Surroundings</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -164,7 +178,6 @@ const handleSubmit = async (e) => {
               </div>
             </div>
 
-            {/* AMENITIES */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
               <h3 className="text-xl font-black text-blue-900 mb-4">Amenities</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -182,7 +195,6 @@ const handleSubmit = async (e) => {
 
           </div>
 
-          {/* RIGHT SIDE - BOOKING FORM */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl border border-gray-100 shadow-md p-6 sticky top-24">
               <h3 className="text-lg font-black text-blue-900 mb-1">Book Your Stay</h3>
@@ -220,7 +232,6 @@ const handleSubmit = async (e) => {
                   </div>
                 </div>
 
-                {/* PRICE SUMMARY */}
                 <div className="bg-blue-50 rounded-xl p-4 space-y-2">
                   <div className="flex justify-between text-sm text-gray-600">
                     <span>${hotel?.price || 770} × {nights} night{nights > 1 ? 's' : ''}</span>

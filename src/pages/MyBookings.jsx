@@ -86,7 +86,7 @@ export default function MyBookings() {
                 {/* Image */}
                 <div className="w-full md:w-40 h-32 rounded-xl overflow-hidden shrink-0">
                   <img
-                    src={booking.image_url || booking.image || booking.hotel_image || "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&q=80"}
+                    src={booking.image_url || booking.image || booking.hotel_image || "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/08/52/7e/grand-royale-hotel-spa.jpg?w=900&h=500&s=1"}
                     className="w-full h-full object-cover"
                     alt={booking.hotel_name}
                   />
