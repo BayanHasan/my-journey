@@ -16,27 +16,26 @@ import MyBookings from "./pages/MyBookings";
 
 export default function App() {
   useEffect(() => {
-    // 1. تغيير عنوان التطبيق
-    document.title = "My Journey";
+  document.title = "My Journey";
 
-    // 2. إضافة أيقونة أجهزة أبل (iOS Home Screen)
-    let appleIcon = document.querySelector("link[rel='apple-touch-icon']");
-    if (!appleIcon) {
-      appleIcon = document.createElement("link");
-      appleIcon.rel = "apple-touch-icon";
-      document.head.appendChild(appleIcon);
-    }
-    appleIcon.href = "/icon.png";
+  const iconUrl = `/icon.png?v=${new Date().getTime()}`;
 
-    // 3. إضافة أيقونة المتصفح والأندرويد (Favicon)
-    let favicon = document.querySelector("link[rel='icon']");
-    if (!favicon) {
-      favicon = document.createElement("link");
-      favicon.rel = "icon";
-      document.head.appendChild(favicon);
-    }
-    favicon.href = "/icon.png";
-  }, []);
+  let appleIcon = document.querySelector("link[rel='apple-touch-icon']");
+  if (!appleIcon) {
+    appleIcon = document.createElement("link");
+    appleIcon.rel = "apple-touch-icon";
+    document.head.appendChild(appleIcon);
+  }
+  appleIcon.href = iconUrl;
+
+  let favicon = document.querySelector("link[rel='icon']");
+  if (!favicon) {
+    favicon = document.createElement("link");
+    favicon.rel = "icon";
+    document.head.appendChild(favicon);
+  }
+  favicon.href = iconUrl;
+}, []);
 
   return (
     <Routes>
