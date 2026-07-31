@@ -24,8 +24,8 @@ const WEEKEND_GETAWAYS = [
   { name: "Doha, Qatar", img: "https://images.unsplash.com/photo-1700901742651-6b353164caf3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cWF0YXJ8ZW58MHx8MHx8fDA%3D" },
   { name: "Cairo, Egypt", img: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RWd5cHR8ZW58MHx8MHx8fDA%3D" },
   { name: "Baghdad, Iraq", img: "https://images.unsplash.com/photo-1718680951424-d3d9b21aa4bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fElyYXF8ZW58MHx8MHx8fDA%3D" },
-  { name: "Damascus, Syria", img: "https://images.unsplash.com/photo-1565552070098-0073a8805961?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFN5cmlhfGVufDB8fDB8fHww" },
-  { name: "Amman, Jordan", img: "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEphbmdvcnxlbnwwfHwwfHx8MA%3D%3D" },
+  { name: "Damascus, Syria", img: "https://images.unsplash.com/photo-1602021007974-06fab8404ea4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFN5cmlhfGVufDB8fDB8fHww" },
+  { name: "Amman, Jordan", img: "https://media.istockphoto.com/id/1470939970/photo/amman-skyline.webp?a=1&b=1&s=612x612&w=0&k=20&c=9D7K1uV_geuvL_nPKDwTctT7bwghG6jXJw-T3BRaWd8=" },
 ];
 
 const FAQS = [
