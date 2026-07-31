@@ -935,14 +935,14 @@ export default function Home() {
                   <div>
                     <div className="h-40 overflow-hidden">
                       <img
-                        src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fFRlc2xhJTIwTmV3JTIwJTI2JTIwVXNlZCUyMEVsZWN0cmljJTIwQ2Fyc3xlbnwwfHwwfHx8MA%3D%3D"
+                        src="https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZyUyMGNsYXNzfGVufDB8fDB8fHww"
                         alt="Tesla"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
                     <div className="p-3">
                       <div className="font-semibold text-gray-800 text-sm truncate">
-                        Tesla Model 3
+                        G Class
                       </div>
                       <div className="flex items-center gap-2 mt-1">
                         <span className="bg-blue-600 text-white text-xs px-2 py-0.5 rounded font-bold">
@@ -951,7 +951,7 @@ export default function Home() {
                         <span className="text-xs text-gray-400">775 reviews</span>
                       </div>
                       <div className="mt-2 text-red-500 font-bold text-sm">
-                        From 7.41 $
+                        From 740$
                       </div>
                     </div>
                   </div>
