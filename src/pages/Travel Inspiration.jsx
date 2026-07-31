@@ -9,8 +9,9 @@ const CITIES = [
   { name: "Dubai", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" },
   { name: "Shanghai", img: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=80" },
   { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" },
-  { name: "Osaka", img: "/public/images/osaka.jpg" },
-];
+  { name: "Osaka", img: "/images/osaka.jpeg" 
+    
+  }];
 
 const EXPERIENCES = [
   { img: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and related leisure experiences, has endured significant change over the past several years." },
