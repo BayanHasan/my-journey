@@ -3,31 +3,29 @@ import Navbar from "../components/Navbar";
 
 const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa"];
 
-// 1. جميع صور المدن بروابط مباشرة عالية الجودة
 const CITIES = [
-  { name: "Bali", img: "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=600&auto=format&fit=crop&q=60" },
-  { name: "Tokyo", img: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&auto=format&fit=crop&q=60" },
-  { name: "Dubai", img: "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?w=600&auto=format&fit=crop&q=60" },
-  { name: "Shanghai", img: "https://images.unsplash.com/photo-1538428494232-9c0d8a3ab390?w=600&auto=format&fit=crop&q=60" },
-  { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&auto=format&fit=crop&q=60" },
-  { name: "Osaka", img: "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600&auto=format&fit=crop&q=60" },
+  { name: "Bali", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" },
+  { name: "Tokyo", img: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80" },
+  { name: "Dubai", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" },
+  { name: "Shanghai", img: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=80" },
+  { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" },
+  { name: "Osaka", img: "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=600&q=80" },
 ];
 
 const EXPERIENCES = [
-  { img: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and related leisure experiences, has endured significant change over the past several years. Travel experiences remain highly variable post-pandemic, with a range of factors painting a complex picture for returns to growth." },
-  { img: "https://images.unsplash.com/photo-1487730116645-74489c95b41b?w=400&q=80", desc: "It doesn't matter where you are in the world, curbside eats are one of the best ways to get a taste of a place. While cities such as and get all the hype, you'll find equally remarkable options in spots which hosts a Food Truck Friday with more than 35 food and drink vendors all summer long." },
-  { img: "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?w=400&q=80", desc: "Preparation is the cornerstone of a successful trip. Packing essentials, researching destinations, and managing expectations are pivotal. Packing light with versatile clothing, researching local customs, and setting realistic expectations ensure a smoother and more enjoyable experience." },
-  { img: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and leisure experiences, has endured significant change over the past several years. Travel experiences remain highly variable post-pandemic, with a range of factors painting a complex picture for returns to growth." },
+  { img: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and related leisure experiences, has endured significant change over the past several years. Travel experiences remain highly variable post-pandemic, with a range of factors painting a complex picture for returns to growth." },
+  { img: "https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=400&q=80", desc: "It doesn't matter where you are in the world, curbside eats are one of the best ways to get a taste of a place. While cities such as and get all the hype, you'll find equally remarkable options in spots which hosts a Food Truck Friday with more than 35 food and drink vendors all summer long." },
+  { img: "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?auto=format&fit=crop&w=400&q=80", desc: "Preparation is the cornerstone of a successful trip. Packing essentials, researching destinations, and managing expectations are pivotal. Packing light with versatile clothing, researching local customs, and setting realistic expectations ensure a smoother and more enjoyable experience." },
+  { img: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and leisure experiences, has endured significant change over the past several years. Travel experiences remain highly variable post-pandemic, with a range of factors painting a complex picture for returns to growth." },
 ];
 
-// 2. روابط مباشرة لعواصم ووجهات الشرق الأوسط
 const WEEKEND_GETAWAYS = [
-  { name: "Beirut, Lebanon", img: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&auto=format&fit=crop&q=60" },
-  { name: "Doha, Qatar", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&auto=format&fit=crop&q=60" },
-  { name: "Cairo, Egypt", img: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=600&auto=format&fit=crop&q=60" },
-  { name: "Baghdad, Iraq", img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&auto=format&fit=crop&q=60" },
-  { name: "Damascus, Syria", img: "https://images.unsplash.com/photo-1565552070098-0073a8805961?w=600&auto=format&fit=crop&q=60" },
-  { name: "Amman, Jordan", img: "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&auto=format&fit=crop&q=60" },
+  { name: "Beirut, Lebanon", img: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=600&q=80" },
+  { name: "Doha, Qatar", img: "https://images.unsplash.com/photo-1568301951336-d2503233c090?auto=format&fit=crop&w=600&q=80" },
+  { name: "Cairo, Egypt", img: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?auto=format&fit=crop&w=600&q=80" },
+  { name: "Baghdad, Iraq", img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=600&q=80" },
+  { name: "Damascus, Syria", img: "https://images.unsplash.com/photo-1565552070098-0073a8805961?auto=format&fit=crop&w=600&q=80" },
+  { name: "Amman, Jordan", img: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=600&q=80" },
 ];
 
 const FAQS = [
@@ -38,6 +36,9 @@ const FAQS = [
   { q: "Can I cancel or change my flight reservation on My Journey?", a: "Depends on the ticket type. Flexible tickets allow changes with no fees." },
   { q: "How do I contact My Journey customer service?", a: "Contact our 24/7 support via live chat, phone, or email." },
 ];
+
+// صورة احتياطية في حال حدثت مشكلة في شبكة المستخدم
+const FALLBACK_IMG = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80";
 
 function FAQItem({ q, a }) {
   const [open, setOpen] = useState(false);
@@ -58,6 +59,11 @@ function FAQItem({ q, a }) {
 export default function TravelInspiration() {
   const [activeRegion, setActiveRegion] = useState("Asia");
 
+  // دالة التعامل مع الأخطاء
+  const handleImgError = (e) => {
+    e.target.src = FALLBACK_IMG;
+  };
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <Navbar />
@@ -66,7 +72,7 @@ export default function TravelInspiration() {
       <section className="relative min-h-[400px] flex flex-col justify-center items-center px-8 py-12 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400&q=80')" }} 
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80')" }} 
         />
         <div className="absolute inset-0 bg-blue-950/50" />
         
@@ -103,8 +109,14 @@ export default function TravelInspiration() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {CITIES.map((city) => (
-            <div key={city.name} className="relative rounded-2xl overflow-hidden h-48 cursor-pointer group">
-              <img src={city.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt={city.name} />
+            <div key={city.name} className="relative rounded-2xl overflow-hidden h-48 cursor-pointer group bg-gray-200">
+              <img 
+                src={city.img} 
+                alt={city.name} 
+                referrerPolicy="no-referrer"
+                onError={handleImgError}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
               <div className="absolute inset-0 bg-black/30" />
               <div className="absolute bottom-4 left-4 text-white font-black text-xl drop-shadow">{city.name}</div>
             </div>
@@ -123,8 +135,14 @@ export default function TravelInspiration() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {EXPERIENCES.map((exp, i) => (
             <div key={i} className="bg-white rounded-2xl shadow hover:shadow-lg transition-all cursor-pointer overflow-hidden">
-              <div className="h-40 overflow-hidden">
-                <img src={exp.img} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="" />
+              <div className="h-40 overflow-hidden bg-gray-200">
+                <img 
+                  src={exp.img} 
+                  alt="Travel experience" 
+                  referrerPolicy="no-referrer"
+                  onError={handleImgError}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                />
               </div>
               <div className="p-3">
                 <p className="text-xs text-gray-500 leading-relaxed line-clamp-6">{exp.desc}</p>
@@ -145,8 +163,14 @@ export default function TravelInspiration() {
         <p className="text-gray-500 text-sm mb-5">Weekend getaways from Amman</p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {WEEKEND_GETAWAYS.map((dest) => (
-            <div key={dest.name} className="relative rounded-2xl overflow-hidden h-44 cursor-pointer group">
-              <img src={dest.img} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt={dest.name} />
+            <div key={dest.name} className="relative rounded-2xl overflow-hidden h-44 cursor-pointer group bg-gray-200">
+              <img 
+                src={dest.img} 
+                alt={dest.name} 
+                referrerPolicy="no-referrer"
+                onError={handleImgError}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              />
               <div className="absolute inset-0 bg-black/30" />
               <div className="absolute bottom-4 left-4 text-white font-black text-lg drop-shadow">{dest.name}</div>
             </div>
