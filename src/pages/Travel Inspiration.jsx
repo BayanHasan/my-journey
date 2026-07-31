@@ -4,11 +4,11 @@ import Navbar from "../components/Navbar";
 const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa"];
 
 const CITIES = [
-  { name: "Bali", img: "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D" },
-  { name: "Tokyo", img: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9reW98ZW58MHx8MHx8fDA%3D" },
-  { name: "Dubai", img: "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHViYWl8ZW58MHx8MHx8fDA%3D" },
-  { name: "Shanghai", img: "/Shanghai.webp" },
-  { name: "Kyoto", img: "/Kyoto.webp" },
+  { name: "Bali", img: "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=600&auto=format&fit=crop&q=60" },
+  { name: "Tokyo", img: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&auto=format&fit=crop&q=60" },
+  { name: "Dubai", img: "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?w=600&auto=format&fit=crop&q=60" },
+  { name: "Shanghai", img: "/shanghai.webp" },
+  { name: "Kyoto", img: "/kyoto.webp" },
   { name: "Osaka", img: "/osaka.jpeg" },
 ];
 
@@ -22,9 +22,9 @@ const EXPERIENCES = [
 const WEEKEND_GETAWAYS = [
   { name: "Beirut, Lebanon", img: "/lebanon.avif" },
   { name: "Doha, Qatar", img: "/doha.jpeg" },
-  { name: "Cairo, Egypt", img: "/cairo ah.jpeg" },
+  { name: "Cairo, Egypt", img: "/cairo.jpeg" }, // تم تعديل الاسم وإلغاء المسافة
   { name: "Baghdad, Iraq", img: "/baghdad.jpeg" },
-  { name: "Damascus, Syria", img: "/Damascus.webp" },
+  { name: "Damascus, Syria", img: "/damascus.webp" },
   { name: "Amman, Jordan", img: "/amman.jpg" },
 ];
 
@@ -60,7 +60,7 @@ export default function TravelInspiration() {
     <div className="bg-gray-50 min-h-screen">
       <Navbar />
 
-     {/* ── HERO ── */}
+      {/* ── HERO ── */}
       <section className="relative min-h-[400px] flex flex-col justify-center items-center px-8 py-12 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
@@ -84,6 +84,7 @@ export default function TravelInspiration() {
           </div>
         </div>
       </section>
+
       {/* ── POPULAR DESTINATIONS ── */}
       <section className="max-w-screen-xl mx-auto px-6 py-10">
         <h2 className="text-2xl font-black text-gray-900 mb-5 text-center">Popular destinations</h2>
@@ -227,7 +228,7 @@ export default function TravelInspiration() {
           </div>
         </div>
         <div className="border-t border-gray-100 pt-5 text-center text-gray-400 text-xs">
-          Copyright © 2025 My Journey.com. All rights reserved
+          Copyright © 2026 My Journey.com. All rights reserved
         </div>
       </footer>
     </div>
