@@ -3,13 +3,14 @@ import Navbar from "../components/Navbar";
 
 const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa"];
 
+// 1. جميع صور المدن بروابط مباشرة عالية الجودة
 const CITIES = [
   { name: "Bali", img: "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=600&auto=format&fit=crop&q=60" },
   { name: "Tokyo", img: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&auto=format&fit=crop&q=60" },
   { name: "Dubai", img: "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?w=600&auto=format&fit=crop&q=60" },
-  { name: "Shanghai", img: "/shanghai.webp" },
-  { name: "Kyoto", img: "/kyoto.webp" },
-  { name: "Osaka", img: "/osaka.jpeg" },
+  { name: "Shanghai", img: "https://images.unsplash.com/photo-1538428494232-9c0d8a3ab390?w=600&auto=format&fit=crop&q=60" },
+  { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&auto=format&fit=crop&q=60" },
+  { name: "Osaka", img: "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600&auto=format&fit=crop&q=60" },
 ];
 
 const EXPERIENCES = [
@@ -19,13 +20,14 @@ const EXPERIENCES = [
   { img: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and leisure experiences, has endured significant change over the past several years. Travel experiences remain highly variable post-pandemic, with a range of factors painting a complex picture for returns to growth." },
 ];
 
+// 2. روابط مباشرة لعواصم ووجهات الشرق الأوسط
 const WEEKEND_GETAWAYS = [
-  { name: "Beirut, Lebanon", img: "/lebanon.avif" },
-  { name: "Doha, Qatar", img: "/doha.jpeg" },
-  { name: "Cairo, Egypt", img: "/cairo.jpeg" }, // تم تعديل الاسم وإلغاء المسافة
-  { name: "Baghdad, Iraq", img: "/baghdad.jpeg" },
-  { name: "Damascus, Syria", img: "/damascus.webp" },
-  { name: "Amman, Jordan", img: "/amman.jpg" },
+  { name: "Beirut, Lebanon", img: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&auto=format&fit=crop&q=60" },
+  { name: "Doha, Qatar", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&auto=format&fit=crop&q=60" },
+  { name: "Cairo, Egypt", img: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=600&auto=format&fit=crop&q=60" },
+  { name: "Baghdad, Iraq", img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&auto=format&fit=crop&q=60" },
+  { name: "Damascus, Syria", img: "https://images.unsplash.com/photo-1565552070098-0073a8805961?w=600&auto=format&fit=crop&q=60" },
+  { name: "Amman, Jordan", img: "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&auto=format&fit=crop&q=60" },
 ];
 
 const FAQS = [
