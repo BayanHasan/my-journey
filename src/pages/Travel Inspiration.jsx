@@ -71,7 +71,7 @@ export default function TravelInspiration() {
         
         <div className="relative z-10 max-w-screen-xl mx-auto w-full flex flex-col items-center text-center">
           <h1 className="text-4xl font-black text-white mb-6 drop-shadow-md">
-            Travel Inspiration
+            Travel Inspirationnnnnn
           </h1>
           
           <div className="bg-white rounded-2xl shadow-xl p-2 flex items-center gap-2 w-full max-w-lg">
