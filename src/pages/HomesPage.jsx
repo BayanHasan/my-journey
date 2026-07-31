@@ -2,7 +2,6 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
-// بيانات الأسئلة الشائعة
 const FAQS = [
   {
     q: "How do I make a reservation?",
@@ -18,7 +17,6 @@ const FAQS = [
   },
 ];
 
-// مكون السؤال والجواب التفاعلي (Accordion)
 function FAQ({ q, a }) {
   const [open, setOpen] = useState(false);
 
@@ -86,7 +84,7 @@ export default function Home() {
         <Navbar />
         <div className="flex max-w-screen-2xl mx-auto items-start">
           {/* SIDEBAR */}
-          <aside className="hidden lg:flex flex-col w-52 shrink-0 py-6 px-3 gap-6 sticky top-20 self-start rounded-r-2xl border-r h-screen overflow-y-auto">
+          <aside className="hidden lg:flex flex-col w-52 shrink-0 py-6 px-3 gap-6 sticky top-20 self-start border-r h-screen overflow-y-auto">
             <a
               href="/hotels"
               className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-gray-700 text-sm font-medium hover:bg-white transition-all"
@@ -393,7 +391,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {/* Hotel Card 1 */}
-                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between">
+                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between border border-gray-100">
                   <div>
                     <div className="relative h-40 overflow-hidden">
                       <img
@@ -447,7 +445,7 @@ export default function Home() {
                 </div>
 
                 {/* Hotel Card 2 */}
-                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between">
+                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between border border-gray-100">
                   <div>
                     <div className="relative h-40 overflow-hidden">
                       <img
@@ -501,7 +499,7 @@ export default function Home() {
                 </div>
 
                 {/* Hotel Card 3 */}
-                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between">
+                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between border border-gray-100">
                   <div>
                     <div className="relative h-40 overflow-hidden">
                       <img
@@ -555,7 +553,7 @@ export default function Home() {
                 </div>
 
                 {/* Hotel Card 4 */}
-                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between">
+                <div className="bg-white rounded-2xl shadow hover:shadow-lg transition-all overflow-hidden cursor-pointer group flex flex-col justify-between border border-gray-100">
                   <div>
                     <div className="relative h-40 overflow-hidden">
                       <img
@@ -628,7 +626,7 @@ export default function Home() {
                 {ATTRACTIONS.map((attraction) => (
                   <div
                     key={attraction.id}
-                    className="bg-white md:bg-gray-50 rounded-2xl overflow-hidden shadow cursor-pointer group flex flex-col justify-between"
+                    className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow cursor-pointer group flex flex-col justify-between"
                   >
                     <div>
                       <div className="h-40 overflow-hidden">
@@ -738,7 +736,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow overflow-hidden cursor-pointer group">
+                <div className="bg-white rounded-2xl shadow overflow-hidden cursor-pointer group border border-gray-100">
                   <div className="h-32 overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1525943421222-633f69ca9078?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fEVkaW5idXJnaHxlbnwwfHwwfHx8MA%3D%3D"
@@ -757,7 +755,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow overflow-hidden cursor-pointer group">
+                <div className="bg-white rounded-2xl shadow overflow-hidden cursor-pointer group border border-gray-100">
                   <div className="h-32 overflow-hidden">
                     <img
                       src="https://media.istockphoto.com/id/1492724975/photo/manchester-tram.webp?a=1&b=1&s=612x612&w=0&k=20&c=K7qmxuY65le_lSWcqVksUdvqYeKD5tUUr8Nqv-upUtw="
@@ -776,7 +774,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl shadow overflow-hidden cursor-pointer group">
+                <div className="bg-white rounded-2xl shadow overflow-hidden cursor-pointer group border border-gray-100">
                   <div className="h-32 overflow-hidden">
                     <img
                       src="https://images.unsplash.com/photo-1706198809101-76340e4da15f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TG9uZG9uJTIwJUUyJTgwJTkzJTIwRWRpbmJ1cmdofGVufDB8fDB8fHww"
@@ -840,7 +838,7 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="bg-gray-50 rounded-2xl shadow overflow-hidden cursor-pointer group flex flex-col justify-between">
+                <div className="bg-gray-50 rounded-2xl shadow overflow-hidden cursor-pointer group flex flex-col justify-between border border-gray-100">
                   <div>
                     <div className="h-40 overflow-hidden">
                       <img
@@ -871,7 +869,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-gray-50 rounded-2xl shadow overflow-hidden cursor-pointer group flex flex-col justify-between">
+                <div className="bg-gray-50 rounded-2xl shadow overflow-hidden cursor-pointer group flex flex-col justify-between border border-gray-100">
                   <div>
                     <div className="h-40 overflow-hidden">
                       <img
