@@ -858,7 +858,7 @@ export default function Home() {
                         <span className="text-xs text-gray-400">775 reviews</span>
                       </div>
                       <div className="mt-2 text-red-500 font-bold text-sm">
-                        From 7.41 $
+                        From 700$
                       </div>
                     </div>
                   </div>
