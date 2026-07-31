@@ -3,20 +3,21 @@ import Navbar from "../components/Navbar";
 
 const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa"];
 
+// روابط صور دائمية ومفتوحة بدون حظر
 const CITIES = [
-  { name: "Bali", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6D5xE27y7SQrI945URBm2tLNZH95tF-QtT-oNb_CCA&s=10" },
-  { name: "Tokyo", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0UxVH0S_HgHWi36tg1o9ZOwocWXfkwwdKSIWDJ8apA&s=10" },
-  { name: "Dubai", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgmzMIHWrMFGfGXApDrys1lLlaTHheGaviuSxoqR1Xg&s=10" },
-  { name: "Shanghai", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfr_wTHpMUdB_BacJ0GbCBBckTLw7MtKn7NaXTqdGkZw&s=10" },
-  { name: "Kyoto", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0itTkJLv7LFrC8_9h1dCMtGb-9IYYV0pCYnmNACBnkw&s=10" },
-  { name: "Osaka", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAV-OJbIt6NDPVyrQmtP3RiEsR-fLjfjvpgnr3w8pCA&s=10" },
+  { name: "Bali", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" },
+  { name: "Tokyo", img: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80" },
+  { name: "Dubai", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" },
+  { name: "Shanghai", img: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=80" },
+  { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" },
+  { name: "Osaka", img: "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=600&q=80" },
 ];
 
 const EXPERIENCES = [
-  { img: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and related leisure experiences, has endured significant change over the past several years. Travel experiences remain highly variable post-pandemic, with a range of factors painting a complex picture for returns to growth." },
-  { img: "https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=400&q=80", desc: "It doesn't matter where you are in the world, curbside eats are one of the best ways to get a taste of a place. While cities such as and get all the hype, you'll find equally remarkable options in spots which hosts a Food Truck Friday with more than 35 food and drink vendors all summer long." },
-  { img: "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?auto=format&fit=crop&w=400&q=80", desc: "Preparation is the cornerstone of a successful trip. Packing essentials, researching destinations, and managing expectations are pivotal. Packing light with versatile clothing, researching local customs, and setting realistic expectations ensure a smoother and more enjoyable experience." },
-  { img: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and leisure experiences, has endured significant change over the past several years. Travel experiences remain highly variable post-pandemic, with a range of factors painting a complex picture for returns to growth." },
+  { img: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and related leisure experiences, has endured significant change over the past several years." },
+  { img: "https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=400&q=80", desc: "It doesn't matter where you are in the world, curbside eats are one of the best ways to get a taste of a place." },
+  { img: "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?auto=format&fit=crop&w=400&q=80", desc: "Preparation is the cornerstone of a successful trip. Packing essentials, researching destinations, and managing expectations are pivotal." },
+  { img: "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and leisure experiences, has endured significant change." },
 ];
 
 const WEEKEND_GETAWAYS = [
@@ -37,7 +38,6 @@ const FAQS = [
   { q: "How do I contact My Journey customer service?", a: "Contact our 24/7 support via live chat, phone, or email." },
 ];
 
-// صورة احتياطية في حال حدثت مشكلة في شبكة المستخدم
 const FALLBACK_IMG = "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=600&q=80";
 
 function FAQItem({ q, a }) {
@@ -59,7 +59,6 @@ function FAQItem({ q, a }) {
 export default function TravelInspiration() {
   const [activeRegion, setActiveRegion] = useState("Asia");
 
-  // دالة التعامل مع الأخطاء
   const handleImgError = (e) => {
     e.target.src = FALLBACK_IMG;
   };
