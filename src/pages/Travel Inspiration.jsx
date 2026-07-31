@@ -5,13 +5,12 @@ const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa
 
 const CITIES = [
   { name: "Bali", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" },
-  { name: "Tokyo", img: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80" },
+  { name: "Tokyo", img: "/images/tokyo.jpg" },
   { name: "Dubai", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" },
   { name: "Shanghai", img: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=80" },
   { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" },
-  { name: "Osaka", img: "/images/osaka.jpeg" 
-    
-  }];
+  { name: "Osaka", img: "/images/osaka.jpg" },
+];
 
 const EXPERIENCES = [
   { img: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=400&q=80", desc: "The in-destination industry, which comprises day tours, activities, attractions and related leisure experiences, has endured significant change over the past several years." },
