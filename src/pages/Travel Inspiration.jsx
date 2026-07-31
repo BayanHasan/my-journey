@@ -4,9 +4,9 @@ import Navbar from "../components/Navbar";
 const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa"];
 
 const CITIES = [
-  { name: "Bali", img: "/bali.jpg" },
-  { name: "Tokyo", img: "/tokyo.avif" },
-  { name: "Dubai", img: "/dubaiii.webp" },
+  { name: "Bali", img: "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFsaXxlbnwwfHwwfHx8MA%3D%3D" },
+  { name: "Tokyo", img: "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dG9reW98ZW58MHx8MHx8fDA%3D" },
+  { name: "Dubai", img: "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHViYWl8ZW58MHx8MHx8fDA%3D" },
   { name: "Shanghai", img: "/Shanghai.webp" },
   { name: "Kyoto", img: "/Kyoto.webp" },
   { name: "Osaka", img: "/osaka.jpeg" },
