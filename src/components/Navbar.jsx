@@ -13,13 +13,13 @@ export default function Navbar() {
   };
 
   const links = [
-    { href: "/hotels", label: "🏨 Hotels & Homes" },
-    { href: "/trains", label: "🚆 Trains" },
-    { href: "/flights", label: "✈️ Flights" },
-    { href: "/cars", label: "🚗 Cars" },
-    { href: "/boats", label: "🛥️ Boats" },
-    { href: "/flight-hotel", label: "🎫 Flight + Hotel" },
-    { href: "/my-bookings", label: "📅 My Booking" },
+    { href: "/hotels", label: " Hotels & Homes" },
+    { href: "/trains", label: " Trains" },
+    { href: "/flights", label: " Flights" },
+    { href: "/cars", label: "Cars" },
+    { href: "/boats", label: " Boats" },
+    { href: "/flight-hotel", label: " Flight + Hotel" },
+    { href: "/my-bookings", label: " My Booking" },
   ];
 
   return (
@@ -39,8 +39,8 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3 text-sm text-white">
-          <span className="hidden lg:block hover:text-blue-300 cursor-pointer">🎧 Support</span>
-          <span className="hidden lg:block hover:text-blue-300 cursor-pointer">📱 App</span>
+          <span className="hidden lg:block hover:text-blue-300 cursor-pointer"> Support</span>
+          <span className="hidden lg:block hover:text-blue-300 cursor-pointer"> App</span>
           <span className="hidden lg:block hover:text-blue-300 cursor-pointer">EN</span>
           
           {user ? (
@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* HAMBURGER BUTTON - MOBILE ONLY */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-blue-200 text-2xl px-1"
+            className="md:hidden text-blue text-2xl px-1"
             aria-label="Menu"
           >
             {menuOpen ? "✕" : "☰"}
@@ -72,12 +72,12 @@ export default function Navbar() {
 
       {/* MOBILE DROPDOWN MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-blue-800 px-4 pb-4 pt-2 flex flex-col gap-1">
+        <div className="md:hidden bg-white px-4 pb-4 pt-2 flex flex-col gap-1">
           {links.map((link) => (
             <Link
               key={link.href}
               to={link.href}
-              className="text-white text-sm font-medium py-2.5 px-2 rounded-lg hover:bg-white transition-colors block"
+              className="text-white text-sm font-medium py-2.5 px-2 rounded-lg hover:bg-blue-700 transition-colors block"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
