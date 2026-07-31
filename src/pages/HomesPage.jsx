@@ -795,7 +795,7 @@ export default function Home() {
               </div>
             </section>
 
-            {/* CAR RENTALS */}
+           {/* CAR RENTALS */}
             <section className="px-4 md:px-6 py-6 bg-white">
               <div className="flex items-center justify-between mb-2">
                 <h2 className="text-xl md:text-2xl font-black text-gray-900">
