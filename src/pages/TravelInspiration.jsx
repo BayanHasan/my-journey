@@ -3,14 +3,13 @@ import Navbar from "../components/Navbar";
 
 const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa"];
 
-// روابط صور مباشرة ومجربة 100% وتعمل على Vercel بدون أخطاء
 const CITIES = [
   { name: "Bali", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600" },
   { name: "Tokyo", img: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600" },
-  { name: "Dubai", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600" },
+  { name: "Dubai", img: "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHViYWl8ZW58MHx8MHx8fDA%3D" },
   { name: "Shanghai", img: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=600" },
   { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600" },
-  { name: "Osaka", img: "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=600" },
+  { name: "Osaka", img: "https://images.unsplash.com/photo-1596240748549-6ec0f32d4c95?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8T3Nha2F8ZW58MHx8MHx8fDA%3D" },
 ];
 
 const EXPERIENCES = [
@@ -21,12 +20,12 @@ const EXPERIENCES = [
 ];
 
 const WEEKEND_GETAWAYS = [
-  { name: "Beirut, Lebanon", img: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600" },
-  { name: "Doha, Qatar", img: "https://images.unsplash.com/photo-1568301951336-d2503233c090?w=600" },
-  { name: "Cairo, Egypt", img: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=600" },
-  { name: "Baghdad, Iraq", img: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600" },
-  { name: "Damascus, Syria", img: "https://images.unsplash.com/photo-1565552070098-0073a8805961?w=600" },
-  { name: "Amman, Jordan", img: "https://images.unsplash.com/photo-1548013146-72479768bada?w=600" },
+  { name: "Beirut, Lebanon", img: "https://images.unsplash.com/photo-1496823407868-80f47c7453b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGViYW5vbnxlbnwwfHwwfHx8MA%3D%3D" },
+  { name: "Doha, Qatar", img: "https://images.unsplash.com/photo-1700901742651-6b353164caf3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cWF0YXJ8ZW58MHx8MHx8fDA%3D" },
+  { name: "Cairo, Egypt", img: "https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RWd5cHR8ZW58MHx8MHx8fDA%3D" },
+  { name: "Baghdad, Iraq", img: "https://images.unsplash.com/photo-1718680951424-d3d9b21aa4bc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fElyYXF8ZW58MHx8MHx8fDA%3D" },
+  { name: "Damascus, Syria", img: "https://images.unsplash.com/photo-1565552070098-0073a8805961?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fFN5cmlhfGVufDB8fDB8fHww" },
+  { name: "Amman, Jordan", img: "https://images.unsplash.com/photo-1548013146-72479768bada?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fEphbmdvcnxlbnwwfHwwfHx8MA%3D%3D" },
 ];
 
 const FAQS = [
