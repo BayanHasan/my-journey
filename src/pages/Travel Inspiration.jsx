@@ -4,12 +4,12 @@ import Navbar from "../components/Navbar";
 const REGION_TABS = ["Asia", "Europe", "North America", "South America", "Africa"];
 
 const CITIES = [
-  { name: "Bali", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" },
-  { name: "Tokyo", img: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80" },
-  { name: "Dubai", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" },
-  { name: "Shanghai", img: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=600&q=80" },
-  { name: "Kyoto", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" },
-  { name: "Osaka", img: "https://images.unsplash.com/photo-1590559899731-a382839e5549?auto=format&fit=crop&w=600&q=80" },
+  { name: "Bali", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo6D5xE27y7SQrI945URBm2tLNZH95tF-QtT-oNb_CCA&s=10" },
+  { name: "Tokyo", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0UxVH0S_HgHWi36tg1o9ZOwocWXfkwwdKSIWDJ8apA&s=10" },
+  { name: "Dubai", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgmzMIHWrMFGfGXApDrys1lLlaTHheGaviuSxoqR1Xg&s=10" },
+  { name: "Shanghai", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfr_wTHpMUdB_BacJ0GbCBBckTLw7MtKn7NaXTqdGkZw&s=10" },
+  { name: "Kyoto", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0itTkJLv7LFrC8_9h1dCMtGb-9IYYV0pCYnmNACBnkw&s=10" },
+  { name: "Osaka", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAV-OJbIt6NDPVyrQmtP3RiEsR-fLjfjvpgnr3w8pCA&s=10" },
 ];
 
 const EXPERIENCES = [
