@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* HAMBURGER BUTTON - MOBILE ONLY */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-white text-2xl px-1"
+            className="md:hidden text-blue-200 text-2xl px-1"
             aria-label="Menu"
           >
             {menuOpen ? "✕" : "☰"}
@@ -77,7 +77,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               to={link.href}
-              className="text-white text-sm font-medium py-2.5 px-2 rounded-lg hover:bg-blue-700 transition-colors block"
+              className="text-white text-sm font-medium py-2.5 px-2 rounded-lg hover:bg-white transition-colors block"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
