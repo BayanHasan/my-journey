@@ -1,8 +1,10 @@
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function Navbar() {
   const navigate = useNavigate();
   const user = JSON.parse(localStorage.getItem("user"));
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogout = () => {
     localStorage.removeItem("token");
@@ -10,30 +12,39 @@ export default function Navbar() {
     navigate("/login");
   };
 
+  const links = [
+    { href: "/hotels", label: "🏨 Hotels & Homes" },
+    { href: "/trains", label: "🚆 Trains" },
+    { href: "/flights", label: "✈️ Flights" },
+    { href: "/cars", label: "🚗 Cars" },
+    { href: "/boats", label: "🛥️ Boats" },
+    { href: "/flight-hotel", label: "🎫 Flight + Hotel" },
+    { href: "/my-bookings", label: "📅 My Booking" },
+  ];
+
   return (
     <nav className="bg-blue-900 sticky top-0 z-50">
       <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-between h-16">
-        <a href="/">
+        <Link to="/">
           <img src="/logo.png" alt="My Journey" className="h-16 w-auto" />
-        </a>
-       
+        </Link>
+
+        {/* DESKTOP LINKS */}
         <div className="hidden md:flex items-center gap-5 text-sm font-medium text-white">
-          <a href="/hotels" className="hover:text-blue-300">Hotels & Homes</a>
-          <a href="/trains" className="hover:text-blue-300">Trains</a>
-          <a href="/flights" className="hover:text-blue-300">Flights</a>
-          <a href="/cars" className="hover:text-blue-300">Cars</a>
-          <a href="/boats" className="hover:text-blue-300">Boats</a>
-          <a href="/flight-hotel" className="hover:text-blue-300">Flight + Hotel</a>
-           <a href="/my-bookings" className="flex text-white items-center gap-1 cursor-pointer hover:text-blue-300 font-semibold transition-colors">
-  📅 My Booking
-</a>
+          {links.map((link) => (
+            <Link key={link.href} to={link.href} className="hover:text-blue-300">
+              {link.label.replace(/^[^\s]+\s/, "")}
+            </Link>
+          ))}
         </div>
-        <div className="flex items-center gap-4 text-sm text-white">
-          <span className="hidden lg:block hover:text-blue-300">🎧 Support</span>
-          <span className="hidden lg:block hover:text-blue-300">📱 App</span>
-          <span className="hidden lg:block hover:text-blue-300">EN</span>
+
+        <div className="flex items-center gap-3 text-sm text-white">
+          <span className="hidden lg:block hover:text-blue-300 cursor-pointer">🎧 Support</span>
+          <span className="hidden lg:block hover:text-blue-300 cursor-pointer">📱 App</span>
+          <span className="hidden lg:block hover:text-blue-300 cursor-pointer">EN</span>
+          
           {user ? (
-            <div className="flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-3">
               <span className="text-blue-200 text-sm">👋 {user.name}</span>
               <button
                 onClick={handleLogout}
@@ -43,12 +54,62 @@ export default function Navbar() {
               </button>
             </div>
           ) : (
-            <a href="/login" className="bg-white text-blue-900 font-bold px-4 py-1.5 rounded-lg text-xs hover:bg-blue-50 transition-colors">
+            <Link to="/login" className="hidden md:inline-block bg-white text-blue-900 font-bold px-4 py-1.5 rounded-lg text-xs hover:bg-blue-50 transition-colors">
               Login
-            </a>
+            </Link>
           )}
+
+          {/* HAMBURGER BUTTON - MOBILE ONLY */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden text-white text-2xl px-1"
+            aria-label="Menu"
+          >
+            {menuOpen ? "✕" : "☰"}
+          </button>
         </div>
       </div>
+
+      {/* MOBILE DROPDOWN MENU */}
+      {menuOpen && (
+        <div className="md:hidden bg-blue-800 px-4 pb-4 pt-2 flex flex-col gap-1">
+          {links.map((link) => (
+            <Link
+              key={link.href}
+              to={link.href}
+              className="text-white text-sm font-medium py-2.5 px-2 rounded-lg hover:bg-blue-700 transition-colors block"
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+
+          <div className="border-t border-blue-700 my-2"></div>
+
+          {user ? (
+            <div className="flex items-center justify-between px-2 py-2">
+              <span className="text-blue-200 text-sm">👋 {user.name}</span>
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  handleLogout();
+                }}
+                className="bg-red-500 hover:bg-red-600 text-white text-xs px-4 py-2 rounded-lg transition-colors"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link
+              to="/login"
+              className="bg-white text-blue-900 font-bold text-center px-4 py-2.5 rounded-lg text-sm hover:bg-blue-50 transition-colors block"
+              onClick={() => setMenuOpen(false)}
+            >
+              Login
+            </Link>
+          )}
+        </div>
+      )}
     </nav>
   );
 }
