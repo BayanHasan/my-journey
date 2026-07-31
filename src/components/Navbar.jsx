@@ -62,7 +62,7 @@ export default function Navbar() {
           {/* HAMBURGER BUTTON - MOBILE ONLY */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-blue text-2xl px-1"
+            className="md:hidden text-white text-2xl px-1"
             aria-label="Menu"
           >
             {menuOpen ? "✕" : "☰"}
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* MOBILE DROPDOWN MENU */}
       {menuOpen && (
-        <div className="md:hidden bg-white px-4 pb-4 pt-2 flex flex-col gap-1">
+        <div className="md:hidden bg-blue-800 px-4 pb-4 pt-2 flex flex-col gap-1">
           {links.map((link) => (
             <Link
               key={link.href}
